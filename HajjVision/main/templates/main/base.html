@@ -1,0 +1,207 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% block title %}برنامج خدمة ضيوف الرحمن 2021–2025{% endblock %}</title>
+
+  <!-- Bootstrap RTL -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-nU14brUcp8I58SgUTkuR8G+M+JQ89MaHNT7lgdHD45j2zVHi6AeaH6rY12mRiCW"
+        crossorigin="anonymous" />
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="{% static 'main/css/base.css' %}" />
+
+  {% block extra_css %}{% endblock %}
+
+  {% block extra_head %}{% endblock %}
+</head>
+<body>
+
+<!-- ══════════ NAVBAR ══════════ -->
+<nav class="site-nav">
+  <div class="container nav-container">
+
+    <div class="nav-utility-row d-none d-lg-flex">
+
+      <div class="nav-utility-left">
+        <a href="#" class="util-link">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"/>
+            <path d="m21 21-4.35-4.35"/>
+          </svg>
+          بحث
+        </a>
+        <span class="util-divider" aria-hidden="true"></span>
+        <a href="#" class="util-link util-font">Aa</a>
+        <span class="util-divider" aria-hidden="true"></span>
+        <a href="#" class="util-link">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          English
+        </a>
+      </div>
+
+      <div class="nav-utility-right">
+        <span class="util-badge">رؤية 2030</span>
+      </div>
+
+    </div>
+
+    <div class="nav-brand-row">
+
+      <!-- Line that grows leftward from the logo -->
+      <div class="nav-line nav-line-right d-none d-lg-block" aria-hidden="true"></div>
+
+      <!-- Logo — centered between the two lines -->
+      <a class="navbar-brand" href="{% url 'main:home' %}">
+        <span class="brand-dot">☪</span>
+        <span class="brand-text">برنامج ضيوف الرحمن</span>
+      </a>
+
+      <!-- Line that grows rightward from the logo -->
+      <div class="nav-line nav-line-left d-none d-lg-block" aria-hidden="true"></div>
+
+      <!-- Mobile hamburger -->
+      <button class="nav-toggler d-lg-none"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mobileNav"
+              aria-controls="mobileNav"
+              aria-expanded="false"
+              aria-label="فتح القائمة">
+        <span class="nav-toggler-bar"></span>
+        <span class="nav-toggler-bar"></span>
+        <span class="nav-toggler-bar"></span>
+      </button>
+
+    </div>
+
+    <div class="nav-main-row d-none d-lg-flex">
+
+      <!-- RIGHT side links (4 links) -->
+      <div class="nav-links-group">
+        <a href="{% url 'main:home' %}"
+           class="nav-link {% if request.resolver_match.url_name == 'home_view' %}active{% endif %}">
+          الرئيسية
+        </a>
+        <a href="{% url 'main:about' %}"
+           class="nav-link {% if request.resolver_match.url_name == 'about_view' %}active{% endif %}">
+          عن البرنامج
+        </a>
+        <a href="{% url 'main:goals' %}"
+           class="nav-link {% if request.resolver_match.url_name == 'goals_view' %}active{% endif %}">
+          الأهداف والرؤية
+        </a>
+        <a href="{% url 'main:focus' %}"
+           class="nav-link {% if request.resolver_match.url_name == 'focus_view' %}active{% endif %}">
+          محاور التركيز
+        </a>
+      </div>
+
+      <!-- Center spacer -->
+      <div class="nav-logo-spacer" aria-hidden="true"></div>
+
+      <!-- LEFT side links (4 links) -->
+      <div class="nav-links-group">
+        <a href="{% url 'main:targets' %}"
+           class="nav-link {% if request.resolver_match.url_name == 'targets_view' %}active{% endif %}">
+          المستهدفات
+        </a>
+        <a href="{% url 'main:baseline' %}"
+           class="nav-link {% if request.resolver_match.url_name == 'baseline_view' %}active{% endif %}">
+          خط الأساس
+        </a>
+        <a href="{% url 'main:strategy' %}"
+           class="nav-link {% if request.resolver_match.url_name == 'strategy_view' %}active{% endif %}">
+          الاستراتيجية
+        </a>
+        <a href="{% url 'main:initiatives' %}"
+           class="nav-link {% if request.resolver_match.url_name == 'initiatives_view' %}active{% endif %}">
+          المبادرات
+        </a>
+      </div>
+
+    </div>
+
+    <!-- ═══ MOBILE COLLAPSE MENU ═══ -->
+    <div class="collapse" id="mobileNav">
+      <ul class="mobile-nav-list">
+        <li><a href="{% url 'main:home' %}"        class="mobile-nav-link">الرئيسية</a></li>
+        <li><a href="{% url 'main:about' %}"       class="mobile-nav-link">عن البرنامج</a></li>
+        <li><a href="{% url 'main:goals' %}"       class="mobile-nav-link">الأهداف والرؤية</a></li>
+        <li><a href="{% url 'main:focus' %}"       class="mobile-nav-link">محاور التركيز</a></li>
+        <li><a href="{% url 'main:targets' %}"     class="mobile-nav-link">المستهدفات والمؤشرات</a></li>
+        <li><a href="{% url 'main:baseline' %}"    class="mobile-nav-link">خط الأساس</a></li>
+        <li><a href="{% url 'main:strategy' %}"    class="mobile-nav-link">الاستراتيجية</a></li>
+        <li><a href="{% url 'main:initiatives' %}" class="mobile-nav-link">المبادرات</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<!-- ══════════ PAGE CONTENT ══════════ -->
+{% block content %}{% endblock %}
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-5">
+
+      <!-- Brand -->
+      <div class="col-lg-4">
+        <div class="footer-brand">برنامج خدمة ضيوف الرحمن</div>
+        <p class="footer-sub">خطة التنفيذ 2021 – 2025 | رؤية المملكة العربية السعودية 2030</p>
+        <p style="font-size:.88rem; color:rgba(255,255,255,.55); line-height:1.8;">
+          شرّف الله هذه البلاد وأهلها بخدمة ضيوف الرحمن على مر العقود،
+          حيث إن زيارة البقاع المقدسة وأداء فريضة الحج ومناسك العمرة
+          هي أمنية كل مسلم.
+        </p>
+      </div>
+
+      <!-- Quick links -->
+      <div class="col-6 col-lg-2">
+        <div class="footer-heading">روابط سريعة</div>
+        <ul class="footer-links">
+          <li><a href="{% url 'main:home' %}">الرئيسية</a></li>
+          <li><a href="{% url 'main:about' %}">عن البرنامج</a></li>
+          <li><a href="{% url 'main:goals' %}">الأهداف</a></li>
+          <li><a href="{% url 'main:focus' %}">محاور التركيز</a></li>
+        </ul>
+      </div>
+
+      <!-- More links -->
+      <div class="col-6 col-lg-2">
+        <div class="footer-heading">المزيد</div>
+        <ul class="footer-links">
+          <li><a href="{% url 'main:targets' %}">المستهدفات</a></li>
+          <li><a href="{% url 'main:baseline' %}">خط الأساس</a></li>
+          <li><a href="{% url 'main:strategy' %}">الاستراتيجية</a></li>
+          <li><a href="{% url 'main:initiatives' %}">المبادرات</a></li>
+        </ul>
+      </div>
+
+      
+
+    <div class="footer-bottom">
+      <span>© 2025 برنامج خدمة ضيوف الرحمن — المملكة العربية السعودية</span>
+      <span class="vision-badge">رؤية 2030</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
