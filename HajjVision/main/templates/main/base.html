@@ -67,21 +67,21 @@
            class="nav-link {% if request.resolver_match.url_name == 'focus_view' %}active{% endif %}">
           محاور التركيز
         </a>
-        <a href="{% url 'main:targets' %}"
-           class="nav-link {% if request.resolver_match.url_name == 'targets_view' %}active{% endif %}">
-          المستهدفات
-        </a>
-        <a href="{% url 'main:baseline' %}"
-           class="nav-link {% if request.resolver_match.url_name == 'baseline_view' %}active{% endif %}">
-          خط الأساس
-        </a>
         <a href="{% url 'main:strategy' %}"
            class="nav-link {% if request.resolver_match.url_name == 'strategy_view' %}active{% endif %}">
           الاستراتيجية
         </a>
+        <a href="{% url 'main:targets' %}"
+           class="nav-link {% if request.resolver_match.url_name == 'targets_view' %}active{% endif %}">
+          المستهدفات
+        </a>
         <a href="{% url 'main:initiatives' %}"
            class="nav-link {% if request.resolver_match.url_name == 'initiatives_view' %}active{% endif %}">
           المبادرات
+        </a>
+        <a href="{% url 'main:baseline' %}"
+           class="nav-link {% if request.resolver_match.url_name == 'baseline_view' %}active{% endif %}">
+          خط الأساس
         </a>
       </div>
 
