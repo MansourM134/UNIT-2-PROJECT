@@ -1,0 +1,548 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block extra_css %}
+  <link rel="stylesheet" href="{% static 'main/css/goals.css' %}">
+{% endblock %}
+
+{% block title %}الأهداف المباشرة — برنامج خدمة ضيوف الرحمن{% endblock %}
+
+{% block content %}
+
+<!--  GOALS HERO  -->
+<section class="goals-hero">
+
+  <div class="goals-hero-overlay"></div>
+
+  <!-- Decorative shapes -->
+  <div class="goals-hero-shapes" aria-hidden="true">
+    <span class="goals-shape goals-shape-1"></span>
+    <span class="goals-shape goals-shape-2"></span>
+    <span class="goals-shape goals-shape-3"></span>
+    <span class="goals-shape goals-shape-4"></span>
+    <span class="goals-shape goals-shape-5"></span>
+  </div>
+
+  <!-- Floating geometric ornaments -->
+  <div class="goals-hero-geo" aria-hidden="true">
+    <span class="goals-geo goals-geo-a"></span>
+    <span class="goals-geo goals-geo-b"></span>
+    <span class="goals-geo goals-geo-c"></span>
+  </div>
+
+  <div class="goals-hero-content">
+    <div class="container">
+
+      <p class="goals-hero-label">ب — الأهداف المباشرة</p>
+
+      <h1 class="goals-hero-title">
+        الأهداف<br>
+        <span class="goals-hero-title-accent">المباشرة للبرنامج</span>
+      </h1>
+
+      <div class="goals-hero-divider"></div>
+
+      <p class="goals-hero-intro">
+        ثلاثة أهداف محورية تُشكّل الركيزة الأساسية<br class="d-none d-md-inline">
+        لبرنامج خدمة ضيوف الرحمن حتى عام 2030
+      </p>
+
+      <!-- Three goal pills -->
+      <div class="goals-hero-pills">
+        <a href="#goal-1" class="goals-pill">
+          <span class="goals-pill-num">١</span>
+          <span class="goals-pill-text">توسيع الاستضافة</span>
+        </a>
+        <a href="#goal-2" class="goals-pill">
+          <span class="goals-pill-num">٢</span>
+          <span class="goals-pill-text">جودة الخدمات</span>
+        </a>
+        <a href="#goal-3" class="goals-pill">
+          <span class="goals-pill-num">٣</span>
+          <span class="goals-pill-text">إثراء التجربة</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="goals-hero-scroll">
+    <div class="goals-hero-scroll-line"></div>
+    <span class="goals-hero-scroll-label">تمرير</span>
+  </div>
+
+</section>
+
+
+<!--  GOAL 1 -->
+<section class="goal-section goal-section--light" id="goal-1">
+
+  <!-- Large decorative background number -->
+  <div class="goal-bg-num" aria-hidden="true">١</div>
+
+  <div class="container">
+    <div class="goal-layout goal-layout--normal">
+
+      <!--  text side  -->
+      <div class="goal-text-col">
+
+        <div class="goal-index-badge">الهدف الأول</div>
+
+        <div class="about-ornament">
+          <span class="about-ornament-line"></span>
+          <span class="about-ornament-diamond"></span>
+          <span class="about-ornament-line about-ornament-line--rev"></span>
+        </div>
+
+        <h2 class="goal-title">تيسير استضافة<br>المزيد من المعتمرين</h2>
+        <p class="goal-subtitle">تسهيل الوصول إلى الحرمين الشريفين</p>
+
+        <p class="goal-desc">
+          يهدف البرنامج إلى تمكين المزيد من المسلمين للقدوم إلى المملكة العربية السعودية
+          لأداء العمرة وتسهيل إجراءات وصولهم، وتيسير سبل وخيارات القدوم لمختلف فئات
+          ضيوف الرحمن. ويأتي ذلك تعزيزاً للدور العظيم الذي تعتز به المملكة في استقبال
+          وخدمة ضيوف بيت الله الحرام.
+        </p>
+
+        <!-- Aspirations -->
+        <div class="goal-aspirations js-reveal" style="--i:0">
+          <div class="goal-asp-header">
+            <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <path d="M10 2L12.39 7.26L18 8.18L14 12.08L14.97 17.66L10 15L5.03 17.66L6 12.08L2 8.18L7.61 7.26L10 2Z"
+                    stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+            </svg>
+            التطلعات
+          </div>
+          <ul class="goal-asp-list">
+            <li>إجراءات سهلة وميسرة للقدوم لأداء العمرة</li>
+            <li>حلول فعالة ومبتكرة لاستيعاب أعداد أكبر</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!--  metrics side  -->
+      <div class="goal-metrics-col">
+
+        <div class="goal-metric-card js-reveal" style="--i:1">
+          <div class="goal-metric-year">2025</div>
+          <div class="goal-metric-track">
+            <div class="goal-metric-big js-counter" data-target="15" data-suffix="م">—</div>
+          </div>
+          <div class="goal-metric-ring" aria-hidden="true">
+            <svg viewBox="0 0 120 120">
+              <circle cx="60" cy="60" r="52" class="goal-ring-track"/>
+              <circle cx="60" cy="60" r="52" class="goal-ring-fill goal-ring-fill--2025"
+                      style="stroke-dasharray:326.7; stroke-dashoffset:326.7" data-target-dash="98"/>
+            </svg>
+          </div>
+          <p class="goal-metric-desc">زيادة الطاقة الاستيعابية لاستضافة 15 مليون معتمر من الخارج</p>
+        </div>
+
+        <div class="goal-connector" aria-hidden="true">
+          <span class="goal-connector-line"></span>
+          <span class="goal-connector-diamond"></span>
+          <span class="goal-connector-line"></span>
+        </div>
+
+        <div class="goal-metric-card goal-metric-card--gold js-reveal" style="--i:2">
+          <div class="goal-metric-year goal-metric-year--gold">2030</div>
+          <div class="goal-metric-track">
+            <div class="goal-metric-big js-counter" data-target="30" data-suffix="م">—</div>
+          </div>
+          <div class="goal-metric-ring" aria-hidden="true">
+            <svg viewBox="0 0 120 120">
+              <circle cx="60" cy="60" r="52" class="goal-ring-track"/>
+              <circle cx="60" cy="60" r="52" class="goal-ring-fill goal-ring-fill--2030"
+                      style="stroke-dasharray:326.7; stroke-dashoffset:326.7" data-target-dash="0"/>
+            </svg>
+          </div>
+          <p class="goal-metric-desc">زيادة الطاقة الاستيعابية لاستضافة 30 مليون معتمر من الخارج</p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!--  GOAL 2  -->
+<section class="goal-section goal-section--dark" id="goal-2">
+
+  <!-- Decorative accent shapes -->
+  <div class="goal-dark-shapes" aria-hidden="true">
+    <span class="goal-dshape goal-dshape-1"></span>
+    <span class="goal-dshape goal-dshape-2"></span>
+    <span class="goal-dshape goal-dshape-3"></span>
+  </div>
+
+  <div class="goal-bg-num goal-bg-num--light" aria-hidden="true">٢</div>
+
+  <div class="container">
+    <div class="goal-layout goal-layout--reversed">
+
+      <!--  metrics side  -->
+      <div class="goal-metrics-col">
+
+        <div class="goal-metric-card goal-metric-card--glass js-reveal" style="--i:0">
+          <div class="goal-metric-year goal-metric-year--light">2025</div>
+          <div class="goal-metric-track">
+            <div class="goal-metric-big goal-metric-big--light js-counter" data-target="85" data-suffix="%">—</div>
+          </div>
+          <div class="goal-metric-ring" aria-hidden="true">
+            <svg viewBox="0 0 120 120">
+              <circle cx="60" cy="60" r="52" class="goal-ring-track goal-ring-track--light"/>
+              <circle cx="60" cy="60" r="52" class="goal-ring-fill goal-ring-fill--green"
+                      style="stroke-dasharray:326.7; stroke-dashoffset:326.7" data-target-dash="49"/>
+            </svg>
+          </div>
+          <p class="goal-metric-desc goal-metric-desc--light">نسبة رضا ضيوف الرحمن عن الخدمات المقدمة لهم خلال الرحلة</p>
+        </div>
+
+        <div class="goal-connector goal-connector--light" aria-hidden="true">
+          <span class="goal-connector-line"></span>
+          <span class="goal-connector-diamond"></span>
+          <span class="goal-connector-line"></span>
+        </div>
+
+        <div class="goal-metric-card goal-metric-card--glass goal-metric-card--gold js-reveal" style="--i:1">
+          <div class="goal-metric-year goal-metric-year--gold">2030</div>
+          <div class="goal-metric-track">
+            <div class="goal-metric-big goal-metric-big--light js-counter" data-target="90" data-suffix="%">—</div>
+          </div>
+          <div class="goal-metric-ring" aria-hidden="true">
+            <svg viewBox="0 0 120 120">
+              <circle cx="60" cy="60" r="52" class="goal-ring-track goal-ring-track--light"/>
+              <circle cx="60" cy="60" r="52" class="goal-ring-fill goal-ring-fill--gold"
+                      style="stroke-dasharray:326.7; stroke-dashoffset:326.7" data-target-dash="33"/>
+            </svg>
+          </div>
+          <p class="goal-metric-desc goal-metric-desc--light">نسبة رضا ضيوف الرحمن مع تجربة تحولية مهيأة بأحدث الابتكارات</p>
+        </div>
+
+      </div>
+
+      <!--  text side  -->
+      <div class="goal-text-col goal-text-col--light">
+
+        <div class="goal-index-badge goal-index-badge--light">الهدف الثاني</div>
+
+        <div class="about-ornament">
+          <span class="about-ornament-line" style="background: linear-gradient(to left, var(--gold-light), transparent)"></span>
+          <span class="about-ornament-diamond"></span>
+          <span class="about-ornament-line about-ornament-line--rev" style="background: linear-gradient(to right, var(--gold-light), transparent)"></span>
+        </div>
+
+        <h2 class="goal-title goal-title--light">تقديم خدمات<br>ذات جودة عالية</h2>
+        <p class="goal-subtitle goal-subtitle--light">للحجاج والمعتمرين</p>
+
+        <p class="goal-desc goal-desc--light">
+          يهدف البرنامج إلى تعزيز التزام المملكة التاريخي والأصيل بخدمة ضيوف الرحمن من
+          الحجاج والمعتمرين من داخل وخارج المملكة على أكمل وجه، وذلك بتقديم تجربة متكاملة
+          وسلسة تحقق رضا ضيوف الرحمن باختلاف فئاتهم واحتياجاتهم.
+        </p>
+
+        <!-- Aspirations -->
+        <div class="goal-aspirations goal-aspirations--light js-reveal" style="--i:2">
+          <div class="goal-asp-header">
+            <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <path d="M10 2L12.39 7.26L18 8.18L14 12.08L14.97 17.66L10 15L5.03 17.66L6 12.08L2 8.18L7.61 7.26L10 2Z"
+                    stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+            </svg>
+            التطلعات
+          </div>
+          <ul class="goal-asp-list">
+            <li>خدمات بأعلى المعايير تلبي احتياجات جميع الفئات</li>
+            <li>سلاسة وانسيابية في الرحلة كاملة مع التقنيات الحديثة</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!--  GOAL 3  -->
+<section class="goal-section goal-section--light goal-section--sites" id="goal-3">
+
+  <div class="goal-bg-num" aria-hidden="true">٣</div>
+
+  <!-- Subtle pattern overlay -->
+  <div class="goal-pattern-overlay" aria-hidden="true"></div>
+
+  <div class="container">
+    <div class="goal-layout goal-layout--normal">
+
+      <!--  text side  -->
+      <div class="goal-text-col">
+
+        <div class="goal-index-badge">الهدف الثالث</div>
+
+        <div class="about-ornament">
+          <span class="about-ornament-line"></span>
+          <span class="about-ornament-diamond"></span>
+          <span class="about-ornament-line about-ornament-line--rev"></span>
+        </div>
+
+        <h2 class="goal-title">إثراء التجربة<br>الدينية والثقافية</h2>
+        <p class="goal-subtitle">للحجاج والمعتمرين</p>
+
+        <p class="goal-desc">
+          يهدف البرنامج إلى خلق تجربة روحانية ثرية لضيوف الرحمن بمختلف فئاتهم،
+          ويأتي ذلك تأكيداً لما تزخر به المملكة من تاريخ إسلامي عريق يتطلع المسلمون
+          من أنحاء العالم لزيارته والتعرف إليه.
+        </p>
+
+        <!-- Aspirations -->
+        <div class="goal-aspirations js-reveal" style="--i:0">
+          <div class="goal-asp-header">
+            <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <path d="M10 2L12.39 7.26L18 8.18L14 12.08L14.97 17.66L10 15L5.03 17.66L6 12.08L2 8.18L7.61 7.26L10 2Z"
+                    stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+            </svg>
+            التطلعات
+          </div>
+          <ul class="goal-asp-list">
+            <li>رحلة روحانية ثرية في مراحلها كافة</li>
+            <li>جعل المملكة بوابة لتجارب ثقافية جديدة</li>
+            <li>مواقع التاريخ الإسلامي مهيأة وجاذبة للزوار</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!--  metrics side  -->
+      <div class="goal-metrics-col goal-metrics-col--sites">
+
+        <div class="goal-sites-header js-reveal" style="--i:0">المواقع التاريخية والثقافية المؤهلة</div>
+
+        <!-- 2025 site card -->
+        <div class="goal-site-card js-reveal" style="--i:1">
+          <div class="goal-site-year">المستهدف حتى 2025</div>
+          <div class="goal-site-visual">
+            <!-- Kaaba-inspired icon -->
+            <svg class="goal-site-icon" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+              <rect x="16" y="22" width="32" height="28" rx="2"
+                    stroke="currentColor" stroke-width="1.8"/>
+              <path d="M10 22 L32 8 L54 22" stroke="currentColor" stroke-width="1.8"
+                    stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M24 50 L24 36 Q32 30 40 36 L40 50"
+                    stroke="currentColor" stroke-width="1.5" opacity="0.55"/>
+              <path d="M12 22 L12 50" stroke="currentColor" stroke-width="1" opacity="0.25" stroke-dasharray="3 3"/>
+              <path d="M52 22 L52 50" stroke="currentColor" stroke-width="1" opacity="0.25" stroke-dasharray="3 3"/>
+            </svg>
+            <div class="goal-site-num js-counter" data-target="15" data-suffix="">—</div>
+          </div>
+          <div class="goal-site-label">موقعاً تاريخياً وثقافياً مؤهلاً</div>
+          <!-- dots representing sites -->
+          <div class="goal-site-dots" aria-hidden="true">
+            <span class="goal-dot goal-dot--active"></span>
+            <span class="goal-dot goal-dot--active"></span>
+            <span class="goal-dot goal-dot--active"></span>
+            <span class="goal-dot goal-dot--active"></span>
+            <span class="goal-dot goal-dot--active"></span>
+            <span class="goal-dot goal-dot--active"></span>
+            <span class="goal-dot goal-dot--active"></span>
+            <span class="goal-dot goal-dot--active"></span>
+            <span class="goal-dot goal-dot--active"></span>
+            <span class="goal-dot goal-dot--active"></span>
+            <span class="goal-dot"></span>
+            <span class="goal-dot"></span>
+            <span class="goal-dot"></span>
+            <span class="goal-dot"></span>
+            <span class="goal-dot"></span>
+          </div>
+        </div>
+
+        <div class="goal-connector" aria-hidden="true">
+          <span class="goal-connector-line"></span>
+          <span class="goal-connector-diamond"></span>
+          <span class="goal-connector-line"></span>
+        </div>
+
+        <!-- 2030 site card -->
+        <div class="goal-site-card goal-site-card--gold js-reveal" style="--i:2">
+          <div class="goal-site-year goal-site-year--gold">المستهدف حتى 2030</div>
+          <div class="goal-site-visual">
+            <svg class="goal-site-icon" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+              <rect x="16" y="22" width="32" height="28" rx="2"
+                    stroke="currentColor" stroke-width="1.8"/>
+              <path d="M10 22 L32 8 L54 22" stroke="currentColor" stroke-width="1.8"
+                    stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M24 50 L24 36 Q32 30 40 36 L40 50"
+                    stroke="currentColor" stroke-width="1.5" opacity="0.55"/>
+              <circle cx="32" cy="14" r="3" stroke="currentColor" stroke-width="1.4" opacity="0.6"/>
+            </svg>
+            <div class="goal-site-num goal-site-num--gold js-counter" data-target="40" data-suffix="">—</div>
+          </div>
+          <div class="goal-site-label">موقعاً تاريخياً وثقافياً مؤهلاً</div>
+          <div class="goal-site-dots" aria-hidden="true">
+            <span class="goal-dot goal-dot--active"></span>
+            <span class="goal-dot goal-dot--active"></span>
+            <span class="goal-dot goal-dot--active"></span>
+            <span class="goal-dot goal-dot--active"></span>
+            <span class="goal-dot goal-dot--active"></span>
+            <span class="goal-dot goal-dot--active"></span>
+            <span class="goal-dot goal-dot--active"></span>
+            <span class="goal-dot goal-dot--active"></span>
+            <span class="goal-dot goal-dot--active"></span>
+            <span class="goal-dot goal-dot--active"></span>
+            <span class="goal-dot goal-dot--active goal-dot--gold"></span>
+            <span class="goal-dot goal-dot--active goal-dot--gold"></span>
+            <span class="goal-dot goal-dot--active goal-dot--gold"></span>
+            <span class="goal-dot goal-dot--active goal-dot--gold"></span>
+            <span class="goal-dot goal-dot--active goal-dot--gold"></span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!--  SUMMARY BAND  -->
+<section class="goals-summary-section">
+
+  <div class="goals-summary-shapes" aria-hidden="true">
+    <span class="about-axes-shape about-axes-shape-1"></span>
+    <span class="about-axes-shape about-axes-shape-2"></span>
+  </div>
+
+  <div class="container">
+
+    <div class="goals-summary-heading">
+      <span class="section-eyebrow section-eyebrow--light">ملخص المستهدفات</span>
+      <h2 class="section-title section-title--light">مسيرة التميز حتى 2030</h2>
+      <div class="about-ornament about-ornament--centered" aria-hidden="true">
+        <span class="about-ornament-line" style="background: linear-gradient(to left, var(--gold), transparent)"></span>
+        <span class="about-ornament-diamond"></span>
+        <span class="about-ornament-line about-ornament-line--rev" style="background: linear-gradient(to right, var(--gold), transparent)"></span>
+      </div>
+    </div>
+
+    <div class="goals-summary-grid">
+
+      <div class="goals-summary-card js-reveal" style="--i:0">
+        <div class="goals-summary-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none">
+            <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 3" opacity=".35"/>
+            <path d="M14 34 C14 26 19 18 24 14 C29 18 34 26 34 34"
+                  stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M18 34 L30 34" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="24" cy="14" r="2.5" fill="currentColor" opacity=".7"/>
+          </svg>
+        </div>
+        <div class="goals-summary-val">30<span class="goals-summary-unit">م</span></div>
+        <h3 class="goals-summary-ttl">معتمر</h3>
+        <p class="goals-summary-desc">الطاقة الاستيعابية المستهدفة للمعتمرين من الخارج بحلول 2030</p>
+      </div>
+
+      <div class="goals-summary-card js-reveal" style="--i:1">
+        <div class="goals-summary-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none">
+            <path d="M8 36 L16 24 L24 30 L32 16 L40 22"
+                  stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="40" cy="22" r="3" fill="currentColor" opacity=".6"/>
+            <path d="M8 40 L40 40" stroke="currentColor" stroke-width="1" opacity=".3"/>
+          </svg>
+        </div>
+        <div class="goals-summary-val">90<span class="goals-summary-unit">%</span></div>
+        <h3 class="goals-summary-ttl">رضا الضيوف</h3>
+        <p class="goals-summary-desc">نسبة رضا ضيوف الرحمن عن التجربة الكاملة بحلول 2030</p>
+      </div>
+
+      <div class="goals-summary-card js-reveal" style="--i:2">
+        <div class="goals-summary-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none">
+            <rect x="12" y="20" width="24" height="20" rx="1.5" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M8 20 L24 8 L40 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="20" y="30" width="8" height="10" rx="1" stroke="currentColor" stroke-width="1.4" opacity=".6"/>
+            <circle cx="24" cy="6" r="2" fill="currentColor" opacity=".5"/>
+          </svg>
+        </div>
+        <div class="goals-summary-val">40<span class="goals-summary-unit"> موقعاً</span></div>
+        <h3 class="goals-summary-ttl">موقع تراثي</h3>
+        <p class="goals-summary-desc">مواقع تاريخية وثقافية إسلامية مؤهلة ومتاحة للزيارة بحلول 2030</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+{% endblock %}
+
+{% block extra_js %}
+<script>
+(function () {
+  'use strict';
+
+  /*  Intersection Observer  */
+  var revealEls = document.querySelectorAll('.js-reveal');
+  var counterEls = document.querySelectorAll('.js-counter');
+  var ringEls = document.querySelectorAll('[data-target-dash]');
+
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  revealEls.forEach(function (el) { observer.observe(el); });
+
+  /*  Counter animation  */
+  function animateCounter(el) {
+    var target = parseInt(el.getAttribute('data-target'), 10);
+    var suffix = el.getAttribute('data-suffix') || '';
+    var duration = 1400;
+    var start = null;
+
+    function step(ts) {
+      if (!start) start = ts;
+      var progress = Math.min((ts - start) / duration, 1);
+      var ease = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.round(ease * target) + suffix;
+      if (progress < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
+  var counterObserver = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        animateCounter(entry.target);
+        counterObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.4 });
+
+  counterEls.forEach(function (el) { counterObserver.observe(el); });
+
+  /*  SVG ring animation  */
+  var ringObserver = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        var el = entry.target;
+        var targetDash = parseFloat(el.getAttribute('data-target-dash'));
+        var full = 326.7;
+        var targetOffset = targetDash; /* stroke-dashoffset = full - arc */
+        el.style.transition = 'stroke-dashoffset 1.6s cubic-bezier(0.4,0,0.2,1) 0.3s';
+        el.style.strokeDashoffset = targetOffset;
+        ringObserver.unobserve(el);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  ringEls.forEach(function (el) { ringObserver.observe(el); });
+
+})();
+</script>
+{% endblock %}
