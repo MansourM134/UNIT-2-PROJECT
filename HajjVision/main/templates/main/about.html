@@ -1,0 +1,337 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block extra_css %}
+  <link rel="stylesheet" href="{% static 'main/css/about.css' %}">
+{% endblock %}
+
+{% block title %}عن البرنامج — برنامج خدمة ضيوف الرحمن{% endblock %}
+
+{% block content %}
+
+<!--  ABOUT HERO  -->
+<section class="about-hero">
+
+  <div class="about-hero-overlay"></div>
+
+  <!-- Decorative shapes -->
+  <div class="about-hero-shapes" aria-hidden="true">
+    <span class="about-shape about-shape-1"></span>
+    <span class="about-shape about-shape-2"></span>
+    <span class="about-shape about-shape-3"></span>
+    <span class="about-shape about-shape-4"></span>
+  </div>
+
+  <div class="about-hero-content">
+    <div class="container">
+
+      <p class="about-hero-label">نطاق البرنامج</p>
+
+      <h1 class="about-hero-title">
+        برنامج خدمة<br>
+        <span class="about-hero-title-accent">ضيوف الرحمن</span>
+      </h1>
+
+      <div class="about-hero-divider"></div>
+
+      <div class="about-hero-ayah">
+        <p class="about-ayah-text">
+          ﴿وَإِذْ بَوَّأْنَا لِإِبْرَاهِيمَ مَكَانَ الْبَيْتِ أَن لَّا تُشْرِكْ بِي شَيْئًا
+          وَطَهِّرْ بَيْتِيَ لِلطَّائِفِينَ وَالْقَائِمِينَ وَالرُّكَّعِ السُّجُودِ﴾
+        </p>
+        <cite class="about-ayah-ref">سورة الحج — الآية 26</cite>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="about-hero-scroll">
+    <div class="about-hero-scroll-line"></div>
+    <span class="about-hero-scroll-label">تمرير</span>
+  </div>
+
+</section>
+
+<!--  DESCRIPTION  -->
+<section class="about-desc-section" style="--desc-bg: url('{% static 'main/images/about_bg2.jpg' %}')">
+
+  <div class="container">
+    <div class="about-desc-layout">
+
+      <!-- text column -->
+      <div class="about-desc-text">
+
+        <span class="section-eyebrow">وصف البرنامج</span>
+        <h2 class="section-title">دور البرنامج<br>ورسالته</h2>
+
+        <div class="about-ornament" aria-hidden="true">
+          <span class="about-ornament-line"></span>
+          <span class="about-ornament-diamond"></span>
+          <span class="about-ornament-line about-ornament-line--rev"></span>
+        </div>
+
+        <div class="about-desc-body">
+          <p>
+            شرّف الله —سبحانه وتعالى— هذه البلاد وأهلها بخدمة ضيوف الرحمن على مر
+            العقود، حيث إن زيارة البقاع المقدسة وأداء فريضة الحج ومناسك العمرة
+            هي أمنية كل مسلم، فقد أظهرت القيادة الرشيدة —أيدها الله— اهتمامها
+            البالغ بخدمة ضيوف الرحمن من حجاج ومعتمرين وزائرين على أكمل وجه.
+          </p>
+          <p>
+            ولتعزيز دور المملكة العربية السعودية قيادةً وشعباً في خدمة ضيوف
+            الرحمن، وإتاحة الفرصة لأكبر عدد منهم لأداء مناسك العمرة وخوض هذه
+            التجربة الروحانية الفريدة، فقد دشّن خادم الحرمين الشريفين الملك سلمان
+            بن عبدالعزيز آل سعود برنامج خدمة ضيوف الرحمن كأحد برامج تحقيق رؤية
+            السعودية 2030م.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- photo column -->
+      <div class="about-desc-visual">
+        <div class="about-desc-img-card">
+          <img src="{% static 'main/images/about_bg2.jpg' %}" alt="الحرمين الشريفين" class="about-desc-img">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!--  AXES  -->
+<section class="about-axes-section">
+
+  <div class="about-axes-shapes" aria-hidden="true">
+    <span class="about-axes-shape about-axes-shape-1"></span>
+    <span class="about-axes-shape about-axes-shape-2"></span>
+  </div>
+
+  <div class="container">
+
+    <div class="about-axes-heading">
+      <span class="section-eyebrow section-eyebrow--light">محاور العمل</span>
+      <h2 class="section-title section-title--light">محاور عمل البرنامج</h2>
+      <div class="about-ornament about-ornament--centered" aria-hidden="true">
+        <span class="about-ornament-line"></span>
+        <span class="about-ornament-diamond"></span>
+        <span class="about-ornament-line about-ornament-line--rev"></span>
+      </div>
+      <p class="about-axes-intro">
+        ستة محاور متكاملة تُشكّل منظومة متناسقة لخدمة ضيوف الرحمن وإثراء تجربتهم
+      </p>
+    </div>
+
+    <div class="about-axes-grid">
+      <div class="about-axis-card js-reveal" style="--i:0">
+        <div class="about-axis-num">١</div>
+        <p class="about-axis-text">رفع مستوى جودة الخدمات المقدمة للحجاج والمعتمرين</p>
+        <div class="about-axis-accent"></div>
+      </div>
+      <div class="about-axis-card js-reveal" style="--i:1">
+        <div class="about-axis-num">٢</div>
+        <p class="about-axis-text">إثراء وتعميق التجربة الروحانية والثقافية لضيوف الرحمن</p>
+        <div class="about-axis-accent"></div>
+      </div>
+      <div class="about-axis-card js-reveal" style="--i:2">
+        <div class="about-axis-num">٣</div>
+        <p class="about-axis-text">تهيئة الحرمين الشريفين وتحقيق رسالة الإسلام العالمية</p>
+        <div class="about-axis-accent"></div>
+      </div>
+      <div class="about-axis-card js-reveal" style="--i:3">
+        <div class="about-axis-num">٤</div>
+        <p class="about-axis-text">تطوير المواقع التاريخية الإسلامية والثقافية</p>
+        <div class="about-axis-accent"></div>
+      </div>
+      <div class="about-axis-card js-reveal" style="--i:4">
+        <div class="about-axis-num">٥</div>
+        <p class="about-axis-text">إتاحة أفضل الخدمات قبل وأثناء وبعد الزيارة</p>
+        <div class="about-axis-accent"></div>
+      </div>
+      <div class="about-axis-card js-reveal" style="--i:5">
+        <div class="about-axis-num">٦</div>
+        <p class="about-axis-text">عكس الصورة المشرّفة والحضارية للمملكة في خدمة ضيوف الرحمن</p>
+        <div class="about-axis-accent"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!--  ENTITIES  -->
+<section class="about-entities-section">
+  <div class="container">
+
+    <div class="about-entities-heading">
+      <span class="section-eyebrow">الجهات المشاركة</span>
+      <h2 class="section-title">أبرز الجهات المشاركة<br>في خدمة ضيوف الرحمن</h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="about-entities-grid">
+
+      <div class="about-entity-card js-reveal" style="--i:0">
+        <div class="about-entity-stripe"></div>
+        <div class="about-entity-type">الجهات المساهمة</div>
+        <h3 class="about-entity-title">جهات تُسهم في نقاط اتصال محددة</h3>
+        <p class="about-entity-desc">
+          جهات تُسهم في خدمة ضيف الرحمن في نقاط اتصال محددة خلال الرحلة
+        </p>
+        <ul class="about-entity-list">
+          <li>وزارة الحج والعمرة</li>
+          <li>الرئاسة العامة لشؤون المسجد الحرام والمسجد النبوي</li>
+          <li>وزارة السياحة</li>
+          <li>هيئة الطيران المدني</li>
+          <li>وزارة الصحة</li>
+          <li>وزارة الداخلية</li>
+        </ul>
+      </div>
+
+      <div class="about-entity-card js-reveal" style="--i:1">
+        <div class="about-entity-stripe"></div>
+        <div class="about-entity-type">الجهات الممكِّنة</div>
+        <h3 class="about-entity-title">جهات تُمكّن مزودي الخدمات</h3>
+        <p class="about-entity-desc">
+          جهات تُمكّن مزودي الخدمات والجهات الشريكة لخدمة ضيف الرحمن في الرحلة كاملة
+        </p>
+        <ul class="about-entity-list">
+          <li>وزارة المالية</li>
+          <li>SDAIA</li>
+          <li>أوقاف</li>
+          <li>وزارة البيئة والمياه والزراعة</li>
+          <li>وزارة النقل والخدمات اللوجستية</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!--  JOURNEY STAGES ?-->
+
+<!--  INDIRECT GOALS  -->
+<section class="about-goals-section">
+  <div class="container">
+
+    <div class="about-goals-heading">
+      <span class="section-eyebrow">الأهداف غير المباشرة</span>
+      <h2 class="section-title">إسهامات البرنامج<br>في رؤية 2030</h2>
+      <div class="section-divider"></div>
+      <p class="about-goals-intro">
+        يطمح البرنامج للإسهام في تحقيق مجموعة من أهداف رؤية السعودية 2030 غير المباشرة
+      </p>
+    </div>
+
+    <div class="about-goals-grid">
+
+      <div class="about-goal-card js-reveal" style="--i:0">
+        <div class="about-goal-top-line"></div>
+        <div class="about-goal-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 6 L28 16 L38 16 L30 23 L33 34 L24 28 L15 34 L18 23 L10 16 L20 16 Z"
+                  stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3" opacity="0.3"/>
+          </svg>
+        </div>
+        <h3 class="about-goal-title">المحافظة على التراث</h3>
+        <p class="about-goal-desc">المحافظة على تراث المملكة الإسلامي والعربي والوطني والتعريف به</p>
+      </div>
+
+      <div class="about-goal-card js-reveal" style="--i:1">
+        <div class="about-goal-top-line"></div>
+        <div class="about-goal-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="10" cy="24" r="5" stroke="currentColor" stroke-width="1.8"/>
+            <circle cx="38" cy="24" r="5" stroke="currentColor" stroke-width="1.8"/>
+            <circle cx="24" cy="10" r="5" stroke="currentColor" stroke-width="1.8"/>
+            <circle cx="24" cy="38" r="5" stroke="currentColor" stroke-width="1.8"/>
+            <line x1="15" y1="24" x2="33" y2="24" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 2"/>
+            <line x1="24" y1="15" x2="24" y2="33" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 2"/>
+          </svg>
+        </div>
+        <h3 class="about-goal-title">الربط والنقل</h3>
+        <p class="about-goal-desc">تحسين الربط المحلي والإقليمي والدولي لشبكات التجارة والنقل</p>
+      </div>
+
+      <div class="about-goal-card js-reveal" style="--i:2">
+        <div class="about-goal-top-line"></div>
+        <div class="about-goal-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8" y="20" width="32" height="22" rx="2" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M4 20 L24 6 L44 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="20" y="30" width="8" height="12" rx="1" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <h3 class="about-goal-title">جودة الخدمات</h3>
+        <p class="about-goal-desc">الارتقاء بجودة الخدمات المقدمة في المدن السعودية</p>
+      </div>
+
+      <div class="about-goal-card js-reveal" style="--i:3">
+        <div class="about-goal-top-line"></div>
+        <div class="about-goal-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 38 C24 38 8 28 8 18 C8 13 12 9 17 9 C20 9 23 11 24 13 C25 11 28 9 31 9 C36 9 40 13 40 18 C40 28 24 38 24 38Z"
+                  stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3 class="about-goal-title">العمل التطوعي</h3>
+        <p class="about-goal-desc">التشجيع على العمل التطوعي وتفعيل دوره في خدمة ضيوف الرحمن</p>
+      </div>
+
+      <div class="about-goal-card js-reveal" style="--i:4">
+        <div class="about-goal-top-line"></div>
+        <div class="about-goal-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="6" y="14" width="36" height="26" rx="2" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M6 22 L42 22" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
+            <path d="M16 14 L16 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M32 14 L32 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="16" cy="32" r="2" fill="currentColor" opacity="0.5"/>
+            <circle cx="24" cy="32" r="2" fill="currentColor" opacity="0.5"/>
+            <circle cx="32" cy="32" r="2" fill="currentColor" opacity="0.5"/>
+          </svg>
+        </div>
+        <h3 class="about-goal-title">المسؤولية الاجتماعية</h3>
+        <p class="about-goal-desc">تمكين الشركات من القيام بمسؤولياتها الاجتماعية في المنظومة</p>
+      </div>
+
+      <div class="about-goal-card js-reveal" style="--i:5">
+        <div class="about-goal-top-line"></div>
+        <div class="about-goal-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="6"  y="28" width="10" height="14" rx="1.5" stroke="currentColor" stroke-width="1.8"/>
+            <rect x="19" y="18" width="10" height="24" rx="1.5" stroke="currentColor" stroke-width="1.8"/>
+            <rect x="32" y="8"  width="10" height="34" rx="1.5" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M11 26 L24 16 L37 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="3 2.5" opacity="0.45"/>
+          </svg>
+        </div>
+        <h3 class="about-goal-title">المراكز اللوجستية</h3>
+        <p class="about-goal-desc">إنشاء وتحسين أداء المراكز اللوجستية لخدمة المنظومة</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% endblock %}
+
+{% block extra_js %}
+<script>
+  (function () {
+    'use strict';
+    var revealEls = document.querySelectorAll('.js-reveal');
+    if (!revealEls.length) return;
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    revealEls.forEach(function (el) { observer.observe(el); });
+  })();
+</script>
+{% endblock %}
