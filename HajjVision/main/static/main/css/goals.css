@@ -69,14 +69,16 @@
 .goals-hero {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding-top: 148px;
+  padding-top: 110px;
   background: var(--green-deep);
   overflow: hidden;
 }
+
 
 .goals-hero::before {
   content: '';
@@ -125,36 +127,31 @@
   width: 480px; height: 480px;
   top: -90px; right: -110px;
   border: 1.5px solid rgba(184,148,63,.11);
-  transform: rotate(14deg);
-  animation: goals-float-cw 18s linear infinite;
+  
 }
 .goals-shape-2 {
   width: 340px; height: 340px;
   top: 10px; right: -50px;
   border: 1.5px solid rgba(0,122,99,.18);
-  transform: rotate(-6deg);
-  animation: goals-float-ccw 22s linear infinite;
+  
 }
 .goals-shape-3 {
   width: 200px; height: 200px;
   bottom: 80px; left: 100px;
   border: 1.5px solid rgba(184,148,63,.10);
-  transform: rotate(30deg);
-  animation: goals-float-cw 26s linear infinite;
+  
 }
 .goals-shape-4 {
   width: 100px; height: 100px;
   top: 55px; left: 260px;
   border: 1.5px solid rgba(212,174,88,.16);
-  transform: rotate(45deg);
-  animation: goals-float-ccw 14s linear infinite;
+ 
 }
 .goals-shape-5 {
   width: 600px; height: 600px;
   bottom: -250px; left: -150px;
   border: 1px solid rgba(0,95,78,.12);
-  transform: rotate(-8deg);
-  animation: goals-float-cw 32s linear infinite;
+ 
 }
 
 @keyframes goals-float-cw  { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
@@ -202,20 +199,10 @@
 .goals-hero-content {
   position: relative;
   z-index: 3;
-  padding: 0 0 90px;
+  padding: 0 0 56px;
   text-align: right;
 }
 
-.goals-hero-label {
-  font-family: 'Tajawal', sans-serif;
-  font-size: .82rem;
-  font-weight: 600;
-  letter-spacing: .18em;
-  color: var(--gold-light);
-  margin-bottom: 18px;
-  opacity: 0;
-  animation: goals-fade-up .8s ease .2s forwards;
-}
 
 .goals-hero-title {
   font-family: 'Amiri', serif;
@@ -223,7 +210,7 @@
   font-weight: 700;
   color: var(--white);
   line-height: 1.18;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   opacity: 0;
   animation: goals-fade-up .9s ease .45s forwards;
 }
@@ -233,7 +220,7 @@
 .goals-hero-divider {
   width: 56px; height: 2px;
   background: var(--gold);
-  margin: 0 0 24px auto;
+  margin: 0 0 18px auto;
   opacity: 0;
   animation: goals-fade-up .8s ease .65s forwards;
 }
@@ -243,7 +230,7 @@
   font-size: clamp(.92rem, 1.6vw, 1.1rem);
   color: rgba(255,255,255,.65);
   line-height: 2;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
   opacity: 0;
   animation: goals-fade-up .8s ease .85s forwards;
 }
@@ -302,6 +289,18 @@
   gap: 6px;
   opacity: 0;
   animation: goals-fade-up .7s ease 1.4s forwards;
+  text-decoration: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  transition: opacity .25s ease, transform .25s ease;
+}
+
+.goals-hero-scroll:hover {
+  opacity: .85 !important;
+  transform: translateX(-50%) translateY(-4px);
 }
 
 .goals-hero-scroll-line {
@@ -312,11 +311,9 @@
 
 .goals-hero-scroll-label {
   font-family: 'Tajawal', sans-serif;
-  font-size: .72rem;
-  letter-spacing: .16em;
-  color: rgba(255,255,255,.4);
-  writing-mode: vertical-lr;
-  text-orientation: mixed;
+  font-size: .7rem;
+  letter-spacing: .12em;
+  color: rgba(255,255,255,.45);
 }
 
 @keyframes goals-scroll-pulse {
@@ -331,7 +328,7 @@
 }
 
 
-/*GOAL SECTIONS — shared layout*/
+/*GOAL SECTIONS*/
 
 .goal-section {
   position: relative;
@@ -804,14 +801,14 @@
 .goal-site-dots {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: 4px;
   justify-content: center;
 }
 
 .goal-dot {
   display: block;
-  width: 10px; height: 10px;
-  border-radius: 2px;
+  width: 7px; height: 7px;
+  border-radius: 1.5px;
   background: rgba(0,95,78,.10);
   transform: rotate(45deg);
   transition: background .2s ease;

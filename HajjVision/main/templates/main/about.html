@@ -25,8 +25,6 @@
   <div class="about-hero-content">
     <div class="container">
 
-      <p class="about-hero-label">نطاق البرنامج</p>
-
       <h1 class="about-hero-title">
         برنامج خدمة<br>
         <span class="about-hero-title-accent">ضيوف الرحمن</span>
@@ -45,15 +43,15 @@
     </div>
   </div>
 
-  <div class="about-hero-scroll">
+  <a href="#about-desc" class="about-hero-scroll" aria-label="انتقل إلى القسم التالي">
     <div class="about-hero-scroll-line"></div>
-    <span class="about-hero-scroll-label">تمرير</span>
-  </div>
+    <span class="about-hero-scroll-label">المزيد</span>
+  </a>
 
 </section>
 
 <!--  DESCRIPTION  -->
-<section class="about-desc-section" style="--desc-bg: url('{% static 'main/images/about_bg2.jpg' %}')">
+<section class="about-desc-section" id="about-desc">
 
   <div class="container">
     <div class="about-desc-layout">
@@ -207,7 +205,6 @@
   </div>
 </section>
 
-<!--  JOURNEY STAGES ?-->
 
 <!--  INDIRECT GOALS  -->
 <section class="about-goals-section">
@@ -319,7 +316,19 @@
 <script>
   (function () {
     'use strict';
-    var revealEls = document.querySelectorAll('.js-reveal');
+    // Smooth scroll for hero scroll button
+  (function () {
+    var heroScroll = document.querySelector('.about-hero-scroll');
+    if (heroScroll) {
+      heroScroll.addEventListener('click', function (e) {
+        e.preventDefault();
+        var target = document.querySelector(this.getAttribute('href'));
+        if (target) { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+      });
+    }
+  })();
+
+  var revealEls = document.querySelectorAll('.js-reveal');
     if (!revealEls.length) return;
 
     var observer = new IntersectionObserver(function (entries) {

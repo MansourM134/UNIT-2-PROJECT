@@ -11,7 +11,5 @@ urlpatterns = [
     path('focus/', views.focus, name='focus'),
     path('targets/', views.targets, name='targets'),
     path('baseline/', views.baseline, name='baseline'),
-    path('strategy/', views.strategy, name='strategy'),
-    path('initiatives/', views.initiatives, name='initiatives'),
-    
+    path('strategy/', views.strategy, name='strategy'),    
 ]

@@ -188,6 +188,9 @@ img { max-width: 100%; }
   margin-right: auto;
 }
 
+@media (min-width: 992px) { .nav-toggler { display: none !important; } }
+@media (max-width: 991.98px) { .nav-main-row { display: none !important; } }
+
 .nav-toggler-bar {
   display: block;
   width: 20px;
@@ -347,7 +350,7 @@ img { max-width: 100%; }
 }
 
 .footer-main-row {
-  padding-bottom: 56px;
+  padding-bottom: 10px;
 }
 
 /*Right column: navigation links*/
@@ -463,15 +466,6 @@ img { max-width: 100%; }
   align-items: center;
   flex-wrap: wrap;
   gap: 12px;
-}
-
-.vision-badge {
-  background: rgba(255,255,255,.06);
-  border: 1px solid rgba(255,255,255,.15);
-  border-radius: 8px;
-  padding: 4px 14px;
-  font-size: .78rem;
-  color: rgba(255,255,255,.6);
 }
 
 /*Responsive*/

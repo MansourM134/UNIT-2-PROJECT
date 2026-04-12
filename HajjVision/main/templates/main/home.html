@@ -36,15 +36,15 @@
     </div>
   </div>
 
-  <div class="hero-scroll">
+  <a href="#leadership-section" class="hero-scroll" aria-label="انتقل إلى القسم التالي">
     <div class="hero-scroll-line"></div>
-    <span class="hero-scroll-label">تمرير</span>
-  </div>
+    <span class="hero-scroll-label">المزيد</span>
+  </a>
 
 </section>
 
 <!-- LEADERSHIP QUOTES -->
-<section class="leadership-section">
+<section class="leadership-section" id="leadership-section">
   <div class="container">
 
     <div class="leadership-heading">
@@ -340,7 +340,7 @@
     <div class="explore-grid">
 
       <!-- Card 1 -->
-      <a href="#" class="explore-card" style="--i:0">
+      <a href="{% url 'main:focus' %}" class="explore-card" style="--i:0">
         <div class="explore-card-glow" aria-hidden="true"></div>
         <div class="explore-card-icon">
           <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -433,38 +433,9 @@
         <div class="explore-card-border" aria-hidden="true"></div>
       </a>
 
+
       <!-- Card 4 -->
       <a href="#" class="explore-card explore-card--wide" style="--i:3">
-        <div class="explore-card-glow" aria-hidden="true"></div>
-        <div class="explore-card-icon">
-          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M24 5C15 5 10 13 10 21C10 30 17 36 20 38L28 38C31 36 38 30 38 21C38 13 33 5 24 5Z"
-                  stroke="currentColor" stroke-width="2" fill="none"/>
-            <path d="M19 38 L17 44" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            <path d="M29 38 L31 44" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            <line x1="14" y1="44" x2="34" y2="44" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            <line x1="24" y1="15" x2="24" y2="29" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.45"/>
-            <line x1="17" y1="22" x2="31" y2="22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.45"/>
-          </svg>
-        </div>
-        <div class="explore-card-content">
-          <h3 class="explore-card-title">المبادرات</h3>
-          <p class="explore-card-desc">محفظة المبادرات وأبرز المشاريع التنفيذية</p>
-        </div>
-        <div class="explore-card-footer explore-card-footer--side">
-          <span class="explore-card-cta">استعرض</span>
-          <span class="explore-card-arrow" aria-hidden="true">
-            <svg viewBox="0 0 22 22" fill="none">
-              <line x1="17" y1="11" x2="4" y2="11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-              <polyline points="10 16 4 11 10 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-            </svg>
-          </span>
-        </div>
-        <div class="explore-card-border" aria-hidden="true"></div>
-      </a>
-
-      <!-- Card 5 -->
-      <a href="#" class="explore-card explore-card--wide" style="--i:4">
         <div class="explore-card-glow" aria-hidden="true"></div>
         <div class="explore-card-icon">
           <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -564,7 +535,17 @@
     cards.forEach(function (c) { cardObserver.observe(c); });
   })();
 
-  // Goals section
+  // Smooth scroll for hero scroll button
+  (function () {
+    var heroScroll = document.querySelector('.hero-scroll');
+    if (heroScroll) {
+      heroScroll.addEventListener('click', function (e) {
+        e.preventDefault();
+        var target = document.querySelector(this.getAttribute('href'));
+        if (target) { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+      });
+    }
+  })();
   (function () {
     var section = document.getElementById('goals-section');
     var video   = section ? section.querySelector('.goals-video') : null;

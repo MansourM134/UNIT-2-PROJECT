@@ -32,5 +32,3 @@ def strategy(request):
     return render(request, 'main/strategy.html')
 
 
-def initiatives(request):
-    return render(request, 'main/initiatives.html')

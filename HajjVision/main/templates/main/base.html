@@ -75,10 +75,6 @@
            class="nav-link {% if request.resolver_match.url_name == 'targets_view' %}active{% endif %}">
           المستهدفات
         </a>
-        <a href="{% url 'main:initiatives' %}"
-           class="nav-link {% if request.resolver_match.url_name == 'initiatives_view' %}active{% endif %}">
-          المبادرات
-        </a>
         <a href="{% url 'main:baseline' %}"
            class="nav-link {% if request.resolver_match.url_name == 'baseline_view' %}active{% endif %}">
           خط الأساس
@@ -122,7 +118,6 @@
         <li><a href="{% url 'main:targets' %}"     class="mobile-nav-link">المستهدفات</a></li>
         <li><a href="{% url 'main:baseline' %}"    class="mobile-nav-link">خط الأساس</a></li>
         <li><a href="{% url 'main:strategy' %}"    class="mobile-nav-link">الاستراتيجية</a></li>
-        <li><a href="{% url 'main:initiatives' %}" class="mobile-nav-link">المبادرات</a></li>
       </ul>
     </div>
 
@@ -148,7 +143,7 @@
 
   <div class="container footer-container">
 
-    <!-- ── Main content row ── -->
+    <!--  Main content row  -->
     <div class="row g-5 footer-main-row align-items-start">
 
       <!-- RIGHT column -->
@@ -161,7 +156,6 @@
               <li><a href="{% url 'main:targets' %}">المستهدفات</a></li>
               <li><a href="{% url 'main:baseline' %}">خط الأساس</a></li>
               <li><a href="{% url 'main:strategy' %}">الاستراتيجية</a></li>
-              <li><a href="{% url 'main:initiatives' %}">المبادرات</a></li>
             </ul>
           </div>
 
@@ -228,10 +222,9 @@
 
     </div><!-- /footer-main-row -->
 
-    <!-- ── Bottom bar ── -->
+    <!--  Bottom bar  -->
     <div class="footer-bottom">
       <span>© 2025 برنامج خدمة ضيوف الرحمن — المملكة العربية السعودية</span>
-      <span class="vision-badge">رؤية 2030</span>
     </div>
 
   </div><!-- /container -->

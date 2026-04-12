@@ -131,6 +131,18 @@
   gap: 6px;
   opacity: 0;
   animation: hero-fade-up .7s ease 1.3s forwards;
+  text-decoration: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  transition: opacity .25s ease, transform .25s ease;
+}
+
+.hero-scroll:hover {
+  opacity: .85 !important;
+  transform: translateX(-50%) translateY(-4px);
 }
 
 .hero-scroll-line {
@@ -870,7 +882,7 @@
   z-index: 3;
 }
 
-/* Background decorations */
+/*Background decorations */
 
 .explore-bg-circle {
   position: absolute;
@@ -1012,7 +1024,7 @@
   to   { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
-/* Heading */
+/*Heading */
 
 .explore-heading {
   text-align: center;
@@ -1112,7 +1124,7 @@
   box-shadow: 0 0 10px 2px rgba(184,148,63,.45);
 }
 
-/* Grid layout */
+/*Grid layout */
 
 .explore-grid {
   display: grid;
@@ -1127,11 +1139,10 @@
 .explore-card:nth-child(2),
 .explore-card:nth-child(3) { grid-column: span 2; }
 
-/*Bottom row */
-.explore-card:nth-child(4),
-.explore-card:nth-child(5) { grid-column: span 3; }
+/*Bottom row — single card, full width*/
+.explore-card:nth-child(4) { grid-column: span 6; }
 
-/* Card base */
+/*Card base */
 
 .explore-card {
   position: relative;
@@ -1186,7 +1197,7 @@
 }
 .explore-card:hover .explore-card-glow { opacity: 1; }
 
-/* Featured card */
+/*Featured card */
 
 .explore-card--featured {
   background: rgba(184,148,63,.058);
@@ -1216,7 +1227,7 @@
   background: radial-gradient(ellipse 85% 65% at 50% 0%, rgba(184,148,63,.11) 0%, transparent 72%);
 }
 
-/* Wide cards */
+/*Wide cards */
 
 .explore-card--wide {
   flex-direction: row;
@@ -1246,7 +1257,7 @@
   border-right-color: rgba(184,148,63,.45);
 }
 
-/* Card parts */
+/*Card parts */
 
 .explore-card-icon {
   width: 48px; height: 48px;
@@ -1333,7 +1344,7 @@
 }
 .explore-card:hover .explore-card-border { transform: scaleX(1); }
 
-/* Responsive */
+/*Responsive */
 
 @media (max-width: 991.98px) {
   .explore-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1341,8 +1352,7 @@
   .explore-card:nth-child(1),
   .explore-card:nth-child(2),
   .explore-card:nth-child(3),
-  .explore-card:nth-child(4),
-  .explore-card:nth-child(5) { grid-column: span 1; }
+  .explore-card:nth-child(4) { grid-column: span 1; }
 
   /*Collapse wide cards back to column layout*/
   .explore-card--wide {
