@@ -1,0 +1,543 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block extra_css %}
+  <link rel="stylesheet" href="{% static 'main/css/strategy.css' %}">
+{% endblock %}
+
+{% block title %}الإطار الاستراتيجي — برنامج خدمة ضيوف الرحمن{% endblock %}
+
+{% block content %}
+
+<!-- 
+     HERO
+ -->
+<section class="strat-hero">
+
+  <div class="strat-hero-overlay"></div>
+
+  <div class="strat-hero-shapes" aria-hidden="true">
+    <span class="strat-shape strat-shape-1"></span>
+    <span class="strat-shape strat-shape-2"></span>
+    <span class="strat-shape strat-shape-3"></span>
+    <span class="strat-shape strat-shape-4"></span>
+    <span class="strat-shape strat-shape-5"></span>
+  </div>
+
+  <div class="strat-orbits" aria-hidden="true">
+    <span class="strat-orbit strat-orbit-1"></span>
+    <span class="strat-orbit strat-orbit-2"></span>
+    <span class="strat-orbit strat-orbit-3"></span>
+  </div>
+
+  <div class="strat-hero-content">
+    <div class="container">
+
+      <h1 class="strat-hero-title">
+        الإطار<br>
+        <span class="strat-hero-accent">الاستراتيجي للبرنامج</span>
+      </h1>
+
+      <div class="strat-hero-divider"></div>
+
+      <p class="strat-hero-sub">
+        الأبعاد والركائز الاستراتيجية التي يسعى البرنامج من خلالها إلى تحقيق<br class="d-none d-md-inline">
+        تجربة سلسة وثرية ممكّنة رقمياً لضيوف الرحمن
+      </p>
+
+    </div>
+  </div>
+
+  <a href="#strat-overview" class="strat-hero-scroll" aria-label="انتقل إلى القسم التالي">
+    <div class="strat-scroll-line"></div>
+    <span class="strat-scroll-label">المزيد</span>
+  </a>
+
+</section>
+
+
+<!-- 
+     OVERVIEW — 6 DIMENSIONS
+ -->
+<section class="strat-overview-section" id="strat-overview">
+  <div class="container">
+
+    <div class="strat-section-header">
+      <span class="strat-eyebrow"> إطار الاستراتيجية</span>
+      <h2 class="strat-section-title">الأبعاد الاستراتيجية الستة</h2>
+      <div class="strat-ornament" aria-hidden="true">
+        <span class="strat-orn-line"></span>
+        <span class="strat-orn-diamond"></span>
+        <span class="strat-orn-line strat-orn-line--rev"></span>
+      </div>
+      <p class="strat-intro-text">
+        تتكون استراتيجية البرنامج من أبعاد وركائز متعددة فُصّلت لتحدد محاور نطاق عمل البرنامج
+        لتحقيق مستهدفاته، وتمثل البوصلة الرئيسة لجميع الجهات العاملة في المنظومة.
+      </p>
+    </div>
+
+    <!-- 6-card grid -->
+    <div class="strat-dims-grid">
+
+      <div class="strat-dim-card js-reveal" data-dim="1" style="--i:0">
+        <div class="strat-dim-num" aria-hidden="true">١</div>
+        <h3 class="strat-dim-title">استراتيجية وحوكمة المنظومة</h3>
+        <p class="strat-dim-desc">
+          تطوير استراتيجية وحوكمة منظومة خدمة ضيوف الرحمن وإعادة هيكلة سوق الحج والعمرة.
+        </p>
+        <span class="strat-dim-ref">ركيزتان</span>
+      </div>
+
+      <div class="strat-dim-card js-reveal" data-dim="2" style="--i:1">
+        <div class="strat-dim-num" aria-hidden="true">٢</div>
+        <h3 class="strat-dim-title">فئات ضيوف الرحمن</h3>
+        <p class="strat-dim-desc">
+          توفير الطاقة الاستيعابية المثلى وزيادة فرص العمرة وتسهيل القدوم لأداء النسك.
+        </p>
+        <span class="strat-dim-ref">ثلاث ركائز</span>
+      </div>
+
+      <div class="strat-dim-card js-reveal" data-dim="3" style="--i:2">
+        <div class="strat-dim-num" aria-hidden="true">٣</div>
+        <h3 class="strat-dim-title">الوجهات</h3>
+        <p class="strat-dim-desc">
+          تطوير الحرمين الشريفين والمشاعر المقدسة وتأهيل المواقع التاريخية والفعاليات.
+        </p>
+        <span class="strat-dim-ref">ثلاث ركائز</span>
+      </div>
+
+      <div class="strat-dim-card js-reveal" data-dim="4" style="--i:3">
+        <div class="strat-dim-num" aria-hidden="true">٤</div>
+        <h3 class="strat-dim-title">الخدمات</h3>
+        <p class="strat-dim-desc">
+          الارتقاء بجودة الخدمات ورفع سلاسة الإجراءات وتعزيز روح الضيافة وتسخير التقنية.
+        </p>
+        <span class="strat-dim-ref">أربع ركائز</span>
+      </div>
+
+      <div class="strat-dim-card js-reveal" data-dim="5" style="--i:4">
+        <div class="strat-dim-num" aria-hidden="true">٥</div>
+        <h3 class="strat-dim-title">استدامة المنظومة</h3>
+        <p class="strat-dim-desc">
+          تعزيز مشاركة القطاع الخاص وغير الربحي وتوجيه مصارف المنظومة لخدمة ضيوف الرحمن.
+        </p>
+        <span class="strat-dim-ref">ركيزتان</span>
+      </div>
+
+      <div class="strat-dim-card js-reveal" data-dim="6" style="--i:5">
+        <div class="strat-dim-num" aria-hidden="true">٦</div>
+        <h3 class="strat-dim-title">الممكنات</h3>
+        <p class="strat-dim-desc">
+          البنية التحتية، البيانات وتقنية المعلومات، القدرات والكفاءات البشرية.
+        </p>
+        <span class="strat-dim-ref">ثلاثة ممكنات</span>
+      </div>
+
+    </div><!-- /strat-dims-grid -->
+
+  </div>
+</section>
+
+
+<!-- 
+     DIMENSION 1 — الحوكمة والاستراتيجية
+ -->
+<section class="strat-detail-section strat-detail-section--light" id="dim-1">
+
+  <div class="strat-bg-num" aria-hidden="true">١</div>
+
+  <div class="container" style="position:relative;z-index:1">
+
+    <div class="strat-section-header" style="text-align:right; margin-bottom:40px">
+     
+      <h2 class="strat-detail-heading js-reveal" style="--i:1">
+        استراتيجية وحوكمة المنظومة<br>
+        <span style="color:var(--gold); font-size:70%">والسياسات الممكنة</span>
+      </h2>
+      <p class="strat-detail-tagline js-reveal" style="--i:2">
+        تهدف هذه الأبعاد إلى تطوير استراتيجية وحوكمة لمنظومة خدمة ضيوف الرحمن
+        تتضمن الأولويات الاستراتيجية للحج والعمرة وتمثّل البوصلة الرئيسة لجميع الجهات.
+      </p>
+    </div>
+
+    <div class="strat-d1-layout">
+
+      <!-- Pillar 1.1 -->
+      <div class="strat-pillar-card js-reveal" style="--i:3; padding:36px 30px">
+        <div class="strat-pillar-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="22" height="22">
+            <path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/>
+          </svg>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">
+          <span style="font-family:'Amiri',serif;font-size:.85rem;color:var(--gold);font-weight:700">الركيزة 1.1</span>
+        </div>
+        <h3 class="strat-pillar-title" style="font-size:1.2rem">
+          تطوير استراتيجية وحوكمة منظومة خدمة ضيوف الرحمن
+        </h3>
+        <p style="font-family:'Tajawal',sans-serif;font-size:.88rem;color:var(--gray-mid);line-height:1.9;margin:12px 0 18px">
+          تهدف هذه الركيزة إلى تطوير استراتيجية وحوكمة لمنظومة خدمة ضيوف الرحمن تتضمن
+          الأولويات الاستراتيجية للحج والعمرة، وتمثل الاستراتيجية البوصلة الرئيسة للجهات
+          جميعها التي تعمل في المنظومة.
+        </p>
+        <ul class="strat-pillar-points">
+          <li>تطوير استراتيجية الحج والعمرة وتحديد الأولويات</li>
+          <li>حوكمة أعمال الحج والعمرة وتنظيم الأدوار والمسؤوليات</li>
+        </ul>
+      </div>
+
+      <!-- Connector -->
+      <div class="strat-d1-connector" aria-hidden="true">
+        <div class="strat-d1-connector-line"></div>
+        <div class="strat-d1-connector-diamond"></div>
+        <div class="strat-d1-connector-line"></div>
+      </div>
+
+      <!-- Pillar 1.2 -->
+      <div class="strat-pillar-card js-reveal" style="--i:4; padding:36px 30px">
+        <div class="strat-pillar-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" width="22" height="22">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+          </svg>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">
+          <span style="font-family:'Amiri',serif;font-size:.85rem;color:var(--gold);font-weight:700">الركيزة 2.1</span>
+        </div>
+        <h3 class="strat-pillar-title" style="font-size:1.2rem">
+          إعادة هيكلة سوق الحج والعمرة ورفع فاعليته
+        </h3>
+        <p style="font-family:'Tajawal',sans-serif;font-size:.88rem;color:var(--gray-mid);line-height:1.9;margin:12px 0 18px">
+          إيماناً من البرنامج بمحورية هيكلة السوق كممكن للنهوض بالخدمات، يستوجب ضبط حوكمة
+          المنظومة وضمان التوازن بين حقوق وواجبات الأطراف جميعها لتحسين تجربة ضيوف الرحمن.
+        </p>
+        <ul class="strat-pillar-points">
+          <li>تحقيق المنفعة القصوى لضيف الرحمن مقابل ما ينفقه</li>
+          <li>تطوير وتفعيل الهيكلة المثلى لمنظومة خدمة ضيوف الرحمن</li>
+        </ul>
+      </div>
+
+    </div><!-- /strat-d1-layout -->
+  </div>
+</section>
+
+
+<!-- 
+     DIMENSION 2 — فئات ضيوف الرحمن
+ -->
+<section class="strat-detail-section strat-detail-section--dark" id="dim-2">
+
+  <div class="strat-bg-num" aria-hidden="true">٢</div>
+
+  <!-- Subtle shapes -->
+  <div class="strat-summary-shapes" aria-hidden="true">
+    <span class="strat-sshape strat-sshape-1"></span>
+    <span class="strat-sshape strat-sshape-2"></span>
+  </div>
+
+  <div class="container" style="position:relative;z-index:1">
+
+    <div class="strat-section-header strat-section-header--light" style="text-align:right; margin-bottom:40px">
+     
+      <h2 class="strat-detail-heading js-reveal" style="--i:1">فئات ضيوف الرحمن</h2>
+      <p class="strat-detail-tagline js-reveal" style="--i:2">
+        توفير الطاقة الاستيعابية المثلى وتوسيع الوصول لأطياف متنوعة من ضيوف بيت الله الحرام
+        عبر ثلاث ركائز متكاملة.
+      </p>
+    </div>
+
+    <!-- Three audience segments as flex strip -->
+    <div class="strat-audience-strip js-reveal" style="--i:3">
+
+      <div class="strat-aud-segment strat-aud-segment--primary">
+        <h3 class="strat-aud-title">الركيزة 1.2 — توفير الطاقة الاستيعابية المثلى</h3>
+        <ul class="strat-aud-points">
+          <li>يستهدف البرنامج قفزات نوعية لاستضافة أكثر من ثلاثة أضعاف العدد الحالي من ضيوف الرحمن</li>
+          <li>رفع الطاقة الاستيعابية للنقاط الحرجة</li>
+          <li>الاستفادة المثلى من الطاقة الاستيعابية على مدار العام</li>
+        </ul>
+      </div>
+
+      <div class="strat-aud-segment strat-aud-segment--secondary">
+        <h3 class="strat-aud-title">الركيزة 2.2 — زيادة فرص العمرة لأطياف متنوعة</h3>
+        <ul class="strat-aud-points">
+          <li>تهدف الركيزة إلى زيادة أعداد الراغبين لأداء العمرة من مختلف المجتمعات المسلمة</li>
+          <li>التوعية والتشويق للأطياف المتنوعة</li>
+          <li>تغيير الصورة النمطية عن صعوبة إجراءات العمرة</li>
+          <li>تحديث البرامج والخدمات وتفعيلها</li>
+        </ul>
+      </div>
+
+      <div class="strat-aud-segment strat-aud-segment--tertiary">
+        <h3 class="strat-aud-title">الركيزة 3.2 — تسهيل القدوم لأداء النسك</h3>
+        <ul class="strat-aud-points">
+          <li>تطوير منظومة التأشيرات وتيسير الإجراءات للمعتمرين من جميع دول العالم</li>
+          <li>تأشيرة الزيارة المحدّثة</li>
+          <li>تأشيرة المرور بهدف العمرة</li>
+          <li>تأشيرة الأهل والأصدقاء</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- 
+     DIMENSION 3 — الوجهات
+ -->
+<section class="strat-detail-section strat-detail-section--pale" id="dim-3">
+
+  <div class="strat-bg-num" aria-hidden="true">٣</div>
+
+  <div class="container" style="position:relative;z-index:1">
+
+    <div class="strat-section-header" style="text-align:right; margin-bottom:40px">
+     
+      <h2 class="strat-detail-heading js-reveal" style="--i:1">الوجهات</h2>
+      <p class="strat-detail-tagline js-reveal" style="--i:2">
+        تطوير المقدسات والمواقع التاريخية وإثراء التجربة الثقافية في مكة المكرمة والمدينة المنورة.
+      </p>
+    </div>
+
+    <div class="strat-dest-cards">
+
+      <div class="strat-dest-card strat-dest-card--1 js-reveal" style="--i:3">
+        <div class="strat-dest-geo" aria-hidden="true"></div>
+        <div class="strat-dest-body">
+          <h3 class="strat-dest-title">الركيزة 1.3 — الحرمان الشريفان والمشاعر والمواقيت</h3>
+          <p class="strat-dest-desc">
+            إنهاء توسعة المسجد الحرام، ورفع مستوى الخدمات في الحرمين، وتطوير الخدمات
+            الأساسية في المشاعر المقدسة والمواقيت.
+          </p>
+        </div>
+      </div>
+
+      <div class="strat-dest-card strat-dest-card--2 js-reveal" style="--i:4">
+        <div class="strat-dest-geo" aria-hidden="true"></div>
+        <div class="strat-dest-body">
+          <h3 class="strat-dest-title">الركيزة 2.3 — المواقع التاريخية الإسلامية</h3>
+          <p class="strat-dest-desc">
+            تطوير المواقع التاريخية في منطقتَي مكة المكرمة والمدينة المنورة وتفعيلها
+            ورفع مستوى الخدمات المقدمة فيها.
+          </p>
+        </div>
+      </div>
+
+      <div class="strat-dest-card strat-dest-card--3 js-reveal" style="--i:5">
+        <div class="strat-dest-geo" aria-hidden="true"></div>
+        <div class="strat-dest-body">
+          <h3 class="strat-dest-title">الركيزة 3.3 — الفعاليات الإثرائية والثقافية</h3>
+          <p class="strat-dest-desc">
+            إثراء رحلة ضيوف الرحمن عبر المعارض والفعاليات الترفيهية والثقافية،
+            وجذب الزوار للمواقع التاريخية الإسلامية.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- 
+     DIMENSION 4 — الخدمات
+ -->
+<section class="strat-detail-section strat-detail-section--charcoal" id="dim-4">
+
+  <div class="strat-bg-num" aria-hidden="true">٤</div>
+
+  <div class="container" style="position:relative;z-index:1">
+
+    <div class="strat-section-header strat-section-header--light" style="text-align:right;margin-bottom:44px">
+     
+      <h2 class="strat-detail-heading js-reveal" style="--i:1">الخدمات</h2>
+      <p class="strat-detail-tagline js-reveal" style="--i:2">
+        أربع ركائز متكاملة ترتقي بمنظومة الخدمات المقدمة لضيوف الرحمن — من الجودة إلى الرقمنة.
+      </p>
+    </div>
+
+    <div class="strat-services-quad">
+
+      <div class="strat-svc-card strat-svc-card--quality js-reveal" style="--i:3">
+        <div class="strat-svc-deco" aria-hidden="true"></div>
+        <h3 class="strat-svc-title">الارتقاء بالجودة</h3>
+        <p class="strat-svc-desc">
+          الارتقاء بجودة الخدمات والمرافق وتوسيع خيارات الخدمات لمختلف فئات ضيوف الرحمن.
+        </p>
+      </div>
+
+      <div class="strat-svc-card strat-svc-card--flow js-reveal" style="--i:4">
+        <div class="strat-svc-deco" aria-hidden="true"></div>
+        <h3 class="strat-svc-title">رفع سلاسة الإجراءات</h3>
+        <p class="strat-svc-desc">
+          تسريع وتسهيل الإجراءات خلال رحلة الضيف وتفعيل الرقابة على فاعلية الإجراءات.
+        </p>
+      </div>
+
+      <div class="strat-svc-card strat-svc-card--hospitality js-reveal" style="--i:5">
+        <div class="strat-svc-deco" aria-hidden="true"></div>
+        <h3 class="strat-svc-title">روح الضيافة</h3>
+        <p class="strat-svc-desc">
+          تعزيز ثقافة محورية الضيف وتطوير مهارات العاملين في الصفوف الأمامية.
+        </p>
+      </div>
+
+      <div class="strat-svc-card strat-svc-card--digital js-reveal" style="--i:6">
+        <div class="strat-svc-deco" aria-hidden="true"></div>
+        <h3 class="strat-svc-title">التقنية الرقمية</h3>
+        <p class="strat-svc-desc">
+          تطوير الخدمات الرقمية لضيوف الرحمن وربط الإجراءات بين الجهات ومنظومة البيانات.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- 
+     DIMENSION 5 — استدامة المنظومة
+ -->
+<section class="strat-detail-section strat-detail-section--light" id="dim-5">
+
+  <div class="strat-bg-num" aria-hidden="true">٥</div>
+
+  <div class="container" style="position:relative;z-index:1">
+
+    <div class="strat-section-header" style="text-align:right;margin-bottom:40px">
+     
+      <h2 class="strat-detail-heading js-reveal" style="--i:1">استدامة المنظومة</h2>
+      <p class="strat-detail-tagline js-reveal" style="--i:2">
+        يسعى البرنامج إلى تعزيز مشاركة القطاع الخاص وغير الربحي في منظومة خدمة ضيوف الرحمن
+        لما لهما من دور استراتيجي في تحقيق مستهدفات رؤية 2030.
+      </p>
+    </div>
+
+    <div class="strat-sustain-layout">
+
+      <div class="strat-sustain-track strat-sustain-track--private js-reveal" style="--i:3">
+        <h3 class="strat-sustain-title">تذليل القيود التشريعية</h3>
+        <p class="strat-sustain-desc">
+          تمكين مشاركة القطاع الخاص عبر ثلاث قنوات رئيسية لضمان استدامة المنظومة ونموها.
+        </p>
+        <ul class="strat-sustain-bullets">
+          <li>التشريعات والأنظمة الممكِّنة</li>
+          <li>الشراكات الاستراتيجية</li>
+          <li>الفرص الاستثمارية في قطاع الحج والعمرة</li>
+        </ul>
+      </div>
+
+      <div class="strat-sustain-track strat-sustain-track--nonprofit js-reveal" style="--i:4">
+        <h3 class="strat-sustain-title">المنظومة غير الربحية</h3>
+        <p class="strat-sustain-desc">
+          توجيه مصارف المنظومة غير الربحية لتمويل مشاريع خدمة ضيوف الرحمن بصورة مستدامة.
+        </p>
+        <ul class="strat-sustain-bullets">
+          <li>توجيه مصارف المنظومة غير الربحية لتمويل مشاريع الخدمات</li>
+          <li>صندوق الأوقاف الداعم لمشاريع ضيوف الرحمن</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- 
+     DIMENSION 6 — الممكنات
+ -->
+<section class="strat-detail-section strat-detail-section--dark" id="dim-6">
+
+  <div class="strat-bg-num" aria-hidden="true">٦</div>
+
+  <div class="strat-summary-shapes" aria-hidden="true">
+    <span class="strat-sshape strat-sshape-1"></span>
+    <span class="strat-sshape strat-sshape-2"></span>
+  </div>
+
+  <div class="container" style="position:relative;z-index:1">
+
+    <div class="strat-section-header strat-section-header--light" style="text-align:right;margin-bottom:44px">
+     
+      <h2 class="strat-detail-heading js-reveal" style="--i:1">الممكنات</h2>
+      <p class="strat-detail-tagline js-reveal" style="--i:2">
+        ثلاثة ممكنات تمس تجربة ضيف الرحمن بشكل رئيس ويؤدي البرنامج فيها دور الدعم الاستراتيجي
+        ومتابعة التنفيذ.
+      </p>
+    </div>
+
+    <div class="strat-enablers-grid">
+
+      <div class="strat-enabler-card js-reveal" style="--i:3">
+        <h3 class="strat-enabler-title">البنية التحتية لشبكة الخدمات</h3>
+        <p class="strat-enabler-desc">
+          المياه، الطاقة، الطرق، الاتصالات — تطوير شامل يتماشى مع مستهدفات البرنامج
+          ويرفع كفاءة الخدمات المقدمة لضيوف الرحمن.
+        </p>
+      </div>
+
+      <div class="strat-enabler-card js-reveal" style="--i:4">
+        <h3 class="strat-enabler-title">البيانات وتقنية المعلومات</h3>
+        <p class="strat-enabler-desc">
+          تطوير أعمال إدارة البيانات لتمكين ركيزة "تسخير التقنية لرفع سلاسة الرحلة"
+          وبناء منظومة بيانات متكاملة تخدم قرارات البرنامج.
+        </p>
+      </div>
+
+      <div class="strat-enabler-card js-reveal" style="--i:5">
+        <h3 class="strat-enabler-title">القدرات والكفاءات البشرية</h3>
+        <p class="strat-enabler-desc">
+          توافر الموارد البشرية وتأهيل الكفاءات للقيام بواجباتها في مختلف أنواع الوظائف
+          ضمن منظومة خدمة ضيوف الرحمن.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+{% endblock %}
+
+{% block extra_js %}
+<script>
+(function () {
+  'use strict';
+
+  /* Smooth scroll for hero button */
+  var heroScroll = document.querySelector('.strat-hero-scroll');
+  if (heroScroll) {
+    heroScroll.addEventListener('click', function (e) {
+      e.preventDefault();
+      var target = document.querySelector(this.getAttribute('href'));
+      if (target) { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    });
+  }
+
+  /* js-reveal IntersectionObserver (same pattern as focus.css & goals.css) */
+  var revealEls = document.querySelectorAll('.js-reveal');
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.10, rootMargin: '0px 0px -40px 0px' });
+
+  revealEls.forEach(function (el) {
+    var delay = (parseInt(el.style.getPropertyValue('--i'), 10) || 0) * 90;
+    el.style.transitionDelay = delay + 'ms';
+    observer.observe(el);
+  });
+
+})();
+</script>
+{% endblock %}
