@@ -1,76 +1,84 @@
-# UNIT-2-PROJECT
+# HajjVision — برنامج خدمة ضيوف الرحمن
 
-## Using Django create a project about our beloved kingdom of your choosing. Examples :
-- Tourism in Saudi Arabia.
-- Culture & Heritage in Saudi Arabia.
-- Manufacturing & Industries in Saudi Arabia.
-- Agriculture in Saudi Arabia.
-- Science in Saudi Arabia.
-- History of Saudi Arabia.
-- etc.....
+---
 
+## Overview
 
-# Minumum Requirements
-- Use Django.
-- Use templates & templates inheritance.
-- Use dynamic urls where applicable.
-- Use static files where applicable.
-- homepage + at least 6 pages.
-- Coherent, uniform design .
-- Implement dark and light mode.
-- Must be Responsive. 
-- You can use a CSS library to style your website (such as Bootstrap or equivalent)
-- You can use a cdn or a cloud storage to host large files such as large videos (example: Goolge Firebase Cloud Storage: https://firebase.google.com/docs/storage)
+**HajjVision** is a informational web platform dedicated to presenting the **Hajj Guests of the Merciful Service Program** (برنامج خدمة ضيوف الرحمن), one of Saudi Arabia's Vision 2030 realization programs. Launched under the patronage of the Custodian of the Two Holy Mosques, the program aims to serve a greater number of Umrah pilgrims and visitors to the Holy Sites, enhance their spiritual and cultural experience, and raise the quality of services provided to them.
 
+The platform is a fully Arabic-language, multi-page website that communicates the program's mission, strategic framework, goals, performance targets, and focus areas in a structured, visually rich format. It supports both **light and dark themes**, persisted via browser cookies, and is built with **Django 6.0.4** using a clean template-based architecture.
 
+### Tech Stack
 
-# Example : TOURISM-PROJECT
+- **Backend:** Python / Django 6.0.4
+- **Frontend:** HTML5, CSS3 (custom per-page stylesheets)
+- **Templating:** Django Templates
+- **Static Assets:** Images, CSS, and video
 
-## Using Django create a website for Tourism in Saudi Arabia . The project name is : Tourister
+---
 
-### Your website has the following pages :
+## Features & User Stories
 
-#### "" : home page , with the following content:
-- Title of the page , with a catchy phrase about tourism in Saudi Arabia
-- A single wide image covering the page.
-- A paragraph about the tourism in Saudi Arabia in General.
-- A list of cities pages with links to them (the pages are listed down below).
+### Visitor 
 
+- As a visitor, I should be able to **view the home page** and read an overview of the Hajj Guests Service Program, including its vision, scope, and leadership directives.
+- As a visitor, I should be able to **browse leadership quotes** from the Custodian of the Two Holy Mosques and the Crown Prince regarding Hajj and Umrah service.
+- As a visitor, I should be able to **navigate to the About page** to learn about the program's description, mission, and role within Vision 2030.
+- As a visitor, I should be able to **view the Goals page** to understand the three core objectives of the program (facilitating more Umrah visitors, enhancing the experience, and elevating Saudi Arabia's image).
+- As a visitor, I should be able to **explore the Targets page** to review key performance indicators and aspirational targets set for 2025 and 2030.
+- As a visitor, I should be able to **read the Baseline page** to understand the current state of affairs, existing challenges, and ongoing transformation efforts.
+- As a visitor, I should be able to **study the Strategic Framework page** to learn about the six strategic dimensions and pillars guiding the program.
+- As a visitor, I should be able to **review the Focus Areas page** to understand the complete pilgrim journey (from inspiration to memory) and the service ecosystem surrounding it.
+- As a visitor, I should be able to **toggle between light and dark themes** for a comfortable reading experience, with the preference saved for future visits.
 
-#### "city/Riyadh/"
-- Title of city with a catchy phrase
-- A Gallery of images (you can use a Carousel) for the city.
-- A short video about the city . (you can embed a youtube video , or use a video hosted on your website)
-- Top Attraction of the city.
-- A briefe history / timeline of the city.
-- Major events in the city.
+---
 
-#### "city/Abha/"
-- Title of city with a catchy phrase.
-- Top Attractions in the city.
-- A brief about the city.
-- A Gallery of images (you can use a Carousel) for the city.
-- A short video about the city . (you can embed a youtube video , or use a video hosted on your website)
-- Top Attraction of the city.
-- A briefe history / timeline of the city.
-- Major events in the city.
+## Usage
 
-#### "city/Mekkah/"
-- Title of city with a catchy phrase.
-- Top Attractions in the city.
-- A brief about the city.
-- A Gallery of images (you can use a Carousel) for the city.
-- A short video about the city . (you can embed a youtube video , or use a video hosted on your website)
-- Top Attraction of the city.
-- A briefe history / timeline of the city.
-- Major events in the city.
+### Running the Project Locally
 
-#### "city/AlUla/"
-- Title of city with a catchy phrase.
-- Top Attractions in the city.
-- A brief about the city.
-- A Gallery of images (you can use a Carousel) for the city.
-- A short video about the city . (you can embed a youtube video , or use a video hosted on your website)
-- Top Attraction of the city.
-- A briefe history / timeline of the city.
-- Major events in the city.
+```bash
+# Clone the repository
+git clone <repository-url>
+cd HajjVision
+
+# Install dependencies
+pip install django
+
+# Start the development server
+python manage.py runserver
+```
+
+The application will be accessible at `http://127.0.0.1:8000/`.
+
+---
+
+### Navigating the Platform
+
+| Action | URL |
+|---|---|
+| Visit the home page | `http://127.0.0.1:8000/` |
+| View the About page | `http://127.0.0.1:8000/about/` |
+| View the Goals page | `http://127.0.0.1:8000/goals/` |
+| View Targets & KPIs | `http://127.0.0.1:8000/targets/` |
+| View the Baseline analysis | `http://127.0.0.1:8000/baseline/` |
+| View the Strategic Framework | `http://127.0.0.1:8000/strategy/` |
+| View Focus Areas | `http://127.0.0.1:8000/focus/` |
+| Access the admin panel | `http://127.0.0.1:8000/admin/` |
+
+---
+
+### Theme Switching
+
+The platform supports light and dark mode. Switch themes via:
+
+```
+# Switch to dark mode
+http://127.0.0.1:8000/set-theme/?theme=dark&next=/
+
+# Switch to light mode
+http://127.0.0.1:8000/set-theme/?theme=light&next=/
+```
+
+The `next` parameter accepts any valid path to redirect back to after the theme is set. The preference is stored in a cookie valid for one year.
+
